@@ -250,10 +250,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- MOBILE MENU ---
     const mobileMenuBtn = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
+    const nav = document.querySelector('.nav-links');
     
     mobileMenuBtn.addEventListener('click', () => {
-        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        // Basic toggle logic - can be refined with classes
+        mobileMenuBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking links
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuBtn.classList.remove('active');
+            nav.classList.remove('active');
+        });
     });
 });
