@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_pricing: "Paketler",
             nav_about: "Hakkımızda",
             nav_contact: "İletişim",
-            hero_title: "Sınırları <br><span class='gradient-text'>Zorlayan</span> Dijital Vizyon.",
+            hero_title: "SINIRLARI <br><span class='gradient-text'>ZORLAYAN</span> DİJİTAL VİZYON.",
             hero_subtitle: "Mis Social Agency, markanızı dijital dünyanın zirvesine taşıyan prodüksiyon ve sosyal medya mimarisini birleştirir.",
             hero_btn_pricing: "Paketleri İncele",
             hero_btn_work: "Referanslarımız",
@@ -27,20 +27,46 @@ document.addEventListener('DOMContentLoaded', () => {
             work_4_desc: "Drone & Sinematik Bakış",
             services_title: "Hizmetlerimiz",
             ser_1_title: "Sosyal Medya Yönetimi",
-            ser_1_desc: "Stratejik planlama ve topluluk yönetimi ile dijital varlığınızı güçlendiriyoruz.",
+            ser_1_desc: "Instagram, Facebook, Twitter ve LinkedIn hesaplarınızı profesyonel olarak yönetiyoruz.",
             ser_2_title: "İçerik Üretimi",
-            ser_2_desc: "Video prodüksiyon ve tasarım ile markanıza özel, etkileyici içerikler üretiyoruz.",
+            ser_2_desc: "Markanıza özel yaratıcı içerikler üretiyoruz. Video prodüksiyon ve fotoğraf çekimi.",
             ser_3_title: "Dijital Reklam",
-            ser_3_desc: "ROI odaklı performans pazarlaması ve reklam yönetimi gerçekleştiriyoruz.",
+            ser_3_desc: "Google ve Meta Ads platformlarında etkili reklam kampanyaları yönetiyoruz.",
+            ser_4_title: "Analiz & Raporlama",
+            ser_4_desc: "Detaylı performans analizleri ile başarınızı ölçüyoruz.",
+            ser_5_title: "Influencer Marketing",
+            ser_5_desc: "Markanıza uygun stratejik iş birlikleri organize ediyoruz.",
+            ser_6_title: "Strateji Danışmanlığı",
+            ser_6_desc: "Markanız için özel büyüme stratejileri geliştiriyoruz.",
             about_title: "Hakkımızda",
             about_desc_1: "Mis Social Agency, markaların dijital dünyada büyümelerine yardımcı olan modern bir sosyal medya ve dijital pazarlama ajansıdır.",
+            about_desc_2: "Kreatif yaklaşımımız ve sektör dinamiklerine hakim ekibimizle, her ölçekten markanın dijital hedeflerine ulaşmasına destek oluyoruz.",
             pricing_title: "Fiyat & Paketlerimiz",
+            pricing_subtitle: "İhtiyaçlarınıza en uygun paketi seçin.",
             pack_1_name: "Bronze Paket",
             pack_2_name: "Silver Paket",
             pack_3_name: "Gold Paket",
-            price_contact: "Fiyat İçin İletişime Geçin",
+            best_value: "EN ÇOK TERCİH EDİLEN",
+            pack_4_name: "Platinum Paket",
+            pack_5_name: "Diamond Paket",
+            enterprise: "KURUMSAL ÇÖZÜM",
+            price_contact: "Fiyat İçin<br><span>İletişime Geçin</span>",
+            price_contact_special: "Özel Teklif İçin<br><span>İletişime Geçin</span>",
+            p4_f1: "Uçtan Uca Marka Yönetimi",
+            p4_f2: "Sınırsız İçerik Üretimi",
+            p4_f3: "Profesyonel Prodüksiyon (4K)",
+            p5_f1: "Global Marka Mimasyonu",
+            p5_f2: "8K Sinematik Prodüksiyon",
+            p5_f3: "24/7 VIP Operasyon Ekibi",
             btn_contact: "İletişime Geç",
-            contact_title: "İletişime Geçin"
+            btn_request: "Teklif Al",
+            contact_title: "İletişime Geçin",
+            contact_email: "E-POSTA",
+            contact_phone: "TELEFON",
+            contact_address: "ADRES",
+            contact_addr_val: "Koç Kuleleri No:2/17-18, Çankaya/Ankara",
+            footer_desc: "Dijital dünyanın sınırlarını zorlayan sosyal medya mimarı.",
+            footer_col_1: "Linkler"
         },
         en: {
             nav_home: "Home",
@@ -49,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_pricing: "Pricing",
             nav_about: "About",
             nav_contact: "Contact",
-            hero_title: "Digital Vision <br><span class='gradient-text'>Pushing</span> The Boundaries.",
+            hero_title: "DIGITAL VISION <br><span class='gradient-text'>PUSHING</span> THE BOUNDARIES.",
             hero_subtitle: "Mis Social Agency combines production and social media architecture to take your brand to the top.",
             hero_btn_pricing: "View Packages",
             hero_btn_work: "Our References",
@@ -68,20 +94,46 @@ document.addEventListener('DOMContentLoaded', () => {
             work_4_desc: "Drone & Cinematic Perspective",
             services_title: "Our Services",
             ser_1_title: "Social Media Management",
-            ser_1_desc: "We strengthen your digital presence with strategic planning and community management.",
+            ser_1_desc: "We manage your Instagram, Facebook, Twitter and LinkedIn accounts professionally.",
             ser_2_title: "Content Production",
-            ser_2_desc: "We produce impressive content special for your brand with video production and design.",
+            ser_2_desc: "We produce creative content for your brand. Video production and photography.",
             ser_3_title: "Digital Advertising",
-            ser_3_desc: "We perform ROI-oriented performance marketing and advertising management.",
+            ser_3_desc: "We manage effective advertising campaigns on Google and Meta Ads platforms.",
+            ser_4_title: "Analysis & Reporting",
+            ser_4_desc: "We measure your success with detailed performance analysis.",
+            ser_5_title: "Influencer Marketing",
+            ser_5_desc: "We organize strategic collaborations suitable for your brand.",
+            ser_6_title: "Strategy Consulting",
+            ser_6_desc: "We develop special growth strategies for your brand.",
             about_title: "About Us",
             about_desc_1: "Mis Social Agency is a modern social media and digital marketing agency that helps brands grow in the digital world.",
+            about_desc_2: "We support brands of all sizes to reach their digital goals with our creative approach.",
             pricing_title: "Pricing & Packages",
+            pricing_subtitle: "Choose the package that best suits your needs.",
             pack_1_name: "Bronze Package",
             pack_2_name: "Silver Package",
             pack_3_name: "Gold Package",
-            price_contact: "Contact Us for Price",
+            best_value: "MOST PREFERRED",
+            pack_4_name: "Platinum Package",
+            pack_5_name: "Diamond Package",
+            enterprise: "ENTERPRISE SOLUTION",
+            price_contact: "Contact Us<br><span>For Pricing</span>",
+            price_contact_special: "Contact Us<br><span>For Special Offer</span>",
+            p4_f1: "End-to-End Brand Management",
+            p4_f2: "Unlimited Content Production",
+            p4_f3: "Professional Production (4K)",
+            p5_f1: "Global Brand Architecture",
+            p5_f2: "8K Cinematic Production",
+            p5_f3: "24/7 VIP Operation Team",
             btn_contact: "Contact Now",
-            contact_title: "Get In Touch"
+            btn_request: "Get Offer",
+            contact_title: "Get In Touch",
+            contact_email: "E-MAIL",
+            contact_phone: "PHONE",
+            contact_address: "ADDRESS",
+            contact_addr_val: "Koc Towers No:2/17-18, Cankaya/Ankara",
+            footer_desc: "Social media architect pushing the limits of the digital world.",
+            footer_col_1: "Links"
         }
     };
 
@@ -120,13 +172,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 const target = parseInt(entry.target.getAttribute('data-target'));
                 let count = 0;
-                const speed = 2000 / target;
+                const duration = 2000; // 2 seconds
+                const stepTime = 20;
+                const increment = target / (duration / stepTime);
+                
                 const updateCount = () => {
-                    const increment = target / 100;
                     if (count < target) {
                         count += increment;
                         entry.target.innerText = Math.ceil(count).toLocaleString() + (target > 100 ? "+" : "%");
-                        setTimeout(updateCount, 10);
+                        setTimeout(updateCount, stepTime);
                     } else {
                         entry.target.innerText = target.toLocaleString() + (target > 100 ? "+" : "%");
                     }
@@ -145,10 +199,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.querySelector('.close-lightbox');
 
     document.querySelectorAll('.video-card').forEach(card => {
-        card.addEventListener('click', () => {
+        card.addEventListener('click', (e) => {
             const videoSrc = card.getAttribute('data-video');
-            lightboxVideo.src = videoSrc;
-            lightbox.style.display = 'flex';
+            if(videoSrc) {
+                lightboxVideo.src = videoSrc;
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
         });
     });
 
@@ -156,11 +213,21 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.style.display = 'none';
         lightboxVideo.pause();
         lightboxVideo.src = "";
+        document.body.style.overflow = 'auto';
     });
 
     lightbox.addEventListener('click', (e) => {
         if (e.target === lightbox) {
             closeBtn.click();
         }
+    });
+
+    // --- MOBILE MENU ---
+    const mobileMenuBtn = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+        navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        // Basic toggle logic - can be refined with classes
     });
 });

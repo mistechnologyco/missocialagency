@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mis Social Agency | Premium Dijital Vizyon</title>
-    <meta name="description" content="Mis Social Agency, yenilikçi sosyal medya yönetimi ve prodüksiyon çözümleri sunan lider bir ajanstır.">
+    <title>Mis Social Agency | Premium Dijital Çözümler</title>
+    <meta name="description" content="Mis Social Agency, yenilikçi sosyal medya yönetimi, içerik üretimi ve performans pazarlaması sunan lider bir ajanstır.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <!-- Favicon / iOS Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="apple-touch-icon" href="logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Video Lightbox -->
+    <!-- Lightbox Modal -->
     <div id="videoLightbox" class="lightbox">
         <span class="close-lightbox">X</span>
         <div class="lightbox-content">
@@ -29,7 +30,7 @@
     <header id="main-header">
         <div class="container nav-balanced">
             <div class="logo">
-                <a href="#"><img src="logo.png" alt="Mis Social Agency" id="header-logo"></a>
+                <a href="#"><img src="logo.png" alt="Mis Social Agency Logo" id="header-logo"></a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -51,15 +52,10 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero-bg-container">
-                <img src="hero.png" alt="" class="hero-img">
-                <div class="hero-overlay"></div>
-            </div>
-            
+        <section class="hero visible" id="home">
+            <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1 class="reveal-text" data-i18n="hero_title">Sınırları <br><span class="gradient-text">Zorlayan</span> Dijital Vizyon.</h1>
+                <h1 class="reveal-text" data-i18n="hero_title">SINIRLARI <br><span class="gradient-text">ZORLAYAN</span> DİJİTAL <br>VİZYON.</h1>
                 <p class="reveal-text" data-i18n="hero_subtitle">Mis Social Agency, markanızı dijital dünyanın zirvesine taşıyan prodüksiyon ve sosyal medya mimarisini birleştirir.</p>
                 <div class="hero-btns reveal-text">
                     <a href="#pricing" class="btn" data-i18n="hero_btn_pricing">Paketleri İncele</a>
@@ -90,14 +86,14 @@
             </div>
         </section>
 
-        <!-- Work Showcase -->
+        <!-- Video Showcase Section -->
         <section id="work" class="container">
             <div class="section-header">
                 <h2 class="gradient-text" data-i18n="work_title">Referans İşlerimiz</h2>
                 <div class="line"></div>
             </div>
+
             <div class="video-grid">
-                <!-- Video Items -->
                 <div class="video-card large" data-video="https://assets.mixkit.co/videos/preview/mixkit-professional-dslr-camera-recording-a-fashion-model-40114-large.mp4">
                     <video src="https://assets.mixkit.co/videos/preview/mixkit-professional-dslr-camera-recording-a-fashion-model-40114-large.mp4" muted loop playsinline></video>
                     <div class="video-info">
@@ -129,37 +125,56 @@
             </div>
         </section>
 
-        <!-- Services -->
+        <!-- Services Section -->
         <section id="services" class="container">
             <div class="section-header">
-                <h2 class="gradient-text" data-i18n="services_title">Hizmetler</h2>
+                <h2 class="gradient-text" data-i18n="services_title">Hizmetlerimiz</h2>
                 <div class="line"></div>
             </div>
+
             <div class="services-advanced-grid">
                 <div class="service-advanced-card">
                     <div class="card-num">01</div>
                     <h3 data-i18n="ser_1_title">Sosyal Medya Yönetimi</h3>
-                    <p data-i18n="ser_1_desc">Stratejik planlama ve topluluk yönetimi ile dijital varlığınızı güçlendiriyoruz.</p>
+                    <p data-i18n="ser_1_desc">Instagram, Facebook, Twitter ve LinkedIn hesaplarınızı profesyonel olarak yönetiyoruz.</p>
                 </div>
                 <div class="service-advanced-card">
                     <div class="card-num">02</div>
                     <h3 data-i18n="ser_2_title">İçerik Üretimi</h3>
-                    <p data-i18n="ser_2_desc">Video prodüksiyon ve tasarım ile markanıza özel, etkileyici içerikler üretiyoruz.</p>
+                    <p data-i18n="ser_2_desc">Markanıza özel yaratıcı içerikler üretiyoruz. Video prodüksiyon ve fotoğraf çekimi.</p>
                 </div>
                 <div class="service-advanced-card">
                     <div class="card-num">03</div>
                     <h3 data-i18n="ser_3_title">Dijital Reklam</h3>
-                    <p data-i18n="ser_3_desc">ROI odaklı performans pazarlaması ve reklam yönetimi gerçekleştiriyoruz.</p>
+                    <p data-i18n="ser_3_desc">Google ve Meta Ads platformlarında etkili reklam kampanyaları yönetiyoruz.</p>
+                </div>
+                <div class="service-advanced-card">
+                    <div class="card-num">04</div>
+                    <h3 data-i18n="ser_4_title">Analiz & Raporlama</h3>
+                    <p data-i18n="ser_4_desc">Detaylı performans analizleri ile başarınızı ölçüyoruz.</p>
+                </div>
+                <div class="service-advanced-card">
+                    <div class="card-num">05</div>
+                    <h3 data-i18n="ser_5_title">Influencer Marketing</h3>
+                    <p data-i18n="ser_5_desc">Markanıza uygun stratejik iş birlikleri organize ediyoruz.</p>
+                </div>
+                <div class="service-advanced-card">
+                    <div class="card-num">06</div>
+                    <h3 data-i18n="ser_6_title">Strateji Danışmanlığı</h3>
+                    <p data-i18n="ser_6_desc">Markanız için özel büyüme stratejileri geliştiriyoruz.</p>
                 </div>
             </div>
         </section>
 
-        <!-- About -->
+        <!-- About Us Section -->
         <section id="about" class="about-section conatiner">
             <div class="container about-grid">
                 <div class="about-content">
-                    <h2 class="gradient-text" data-i18n="about_title">Hakkımızda</h2>
-                    <p data-i18n="about_desc_1">Mis Social Agency, dijital dünyada markanızı zirveye tașımak için yaratıcılık ve stratejiyi birleștirir.</p>
+                    <div class="about-header">
+                        <h2 class="gradient-text" data-i18n="about_title">Hakkımızda</h2>
+                    </div>
+                    <p data-i18n="about_desc_1">Mis Social Agency, markaların dijital dünyada büyümelerine yardımcı olan modern bir sosyal medya ve dijital pazarlama ajansıdır.</p>
+                    <p data-i18n="about_desc_2">Kreatif yaklaşımımız ve sektör dinamiklerine hakim ekibimizle, her ölçekten markanın dijital hedeflerine ulaşmasına destek oluyoruz.</p>
                 </div>
                 <div class="about-image">
                     <img src="1.png" alt="About Mis Social Agency">
@@ -167,53 +182,146 @@
             </div>
         </section>
 
-        <!-- Pricing -->
-        <section id="pricing" class="pricing-section container">
-            <div class="section-header center">
-                <h2 class="gradient-text" data-i18n="pricing_title">Fiyat & Paketlerimiz</h2>
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section container-wide">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="gradient-text" data-i18n="pricing_title">Fiyat & Paketlerimiz</h2>
+                    <p data-i18n="pricing_subtitle">İhtiyaçlarınıza en uygun paketi seçin.</p>
+                </div>
             </div>
-            <div class="pricing-grid">
+
+            <div class="pricing-grid-full container-wide">
                 <div class="pricing-card">
-                    <div class="pack-name" data-i18n="pack_1_name">Bronze</div>
-                    <div class="price-contact" data-i18n="price_contact">Fiyat İçin İletişime Geçin</div>
+                    <div class="pack-name" data-i18n="pack_1_name">Bronze Paket</div>
+                    <div class="price-contact" data-i18n="price_contact">Fiyat İçin<br><span>İletişime Geçin</span></div>
+                    <ul class="features">
+                        <li data-i18n="p1_f1">Tek Platform Seçimi</li>
+                        <li data-i18n="p1_f2">Ayda 4 Özel İçerik</li>
+                        <li data-i18n="p1_f3">Profil Optimizasyonu</li>
+                        <li data-i18n="p1_f4">Temel Müşteri Desteği</li>
+                        <li data-i18n="p1_f5">Aylık Özet Rapor</li>
+                    </ul>
+                    <a href="#contact" class="price-btn" data-i18n="btn_contact">İletişime Geç</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pack-name" data-i18n="pack_2_name">Silver Paket</div>
+                    <div class="price-contact" data-i18n="price_contact">Fiyat İçin<br><span>İletişime Geçin</span></div>
+                    <ul class="features">
+                        <li data-i18n="p2_f1">İki Platform Yönetimi</li>
+                        <li data-i18n="p2_f2">Ayda 8 Özel İçerik</li>
+                        <li data-i18n="p2_f3">Profesyonel Profil Tasarımı</li>
+                        <li data-i18n="p2_f4">Haftalık Hikaye Tasarımları</li>
+                        <li data-i18n="p2_f5">Temel Reklam Yönetimi</li>
+                        <li data-i18n="p2_f6">Performans Raporu</li>
+                    </ul>
                     <a href="#contact" class="price-btn" data-i18n="btn_contact">İletişime Geç</a>
                 </div>
                 <div class="pricing-card featured">
-                    <div class="pack-name" data-i18n="pack_2_name">Silver</div>
-                    <div class="price-contact" data-i18n="price_contact">Fiyat İçin İletişime Geçin</div>
+                    <div class="best-value" data-i18n="best_value">EN ÇOK TERCİH EDİLEN</div>
+                    <div class="pack-name" data-i18n="pack_3_name">Gold Paket</div>
+                    <div class="price-contact" data-i18n="price_contact">Fiyat İçin<br><span>İletişime Geçin</span></div>
+                    <ul class="features">
+                        <li data-i18n="p3_f1">Tüm Platformlar</li>
+                        <li data-i18n="p3_f2">Ayda 20 İçerik + 8 Reels</li>
+                        <li data-i18n="p3_f3">Video & Prodüksiyon</li>
+                        <li data-i18n="p3_f4">Gelişmiş Ads Yönetimi</li>
+                        <li data-i18n="p3_f5">Influencer Yönetimi</li>
+                        <li data-i18n="p3_f6">Detaylı Rakip Analizi</li>
+                    </ul>
                     <a href="#contact" class="price-btn" data-i18n="btn_contact">İletişime Geç</a>
                 </div>
                 <div class="pricing-card">
-                    <div class="pack-name" data-i18n="pack_3_name">Gold</div>
-                    <div class="price-contact" data-i18n="price_contact">Fiyat İçin İletişime Geçin</div>
+                    <div class="pack-name" data-i18n="pack_4_name">Platinum Paket</div>
+                    <div class="price-contact" data-i18n="price_contact">Fiyat İçin<br><span>İletişime Geçin</span></div>
+                    <ul class="features">
+                        <li data-i18n="p4_f1">Uçtan Uca Marka Yönetimi</li>
+                        <li data-i18n="p4_f2">Sınırsız İçerik Üretimi</li>
+                        <li data-i18n="p4_f3">Sinematik Prodüksiyon</li>
+                        <li data-i18n="p4_f4">Kurumsal Çekimler</li>
+                        <li data-i18n="p4_f5">Global Influencer Marketing</li>
+                        <li data-i18n="p4_f6">Reklam Strateji Danışmanlığı</li>
+                    </ul>
                     <a href="#contact" class="price-btn" data-i18n="btn_contact">İletişime Geç</a>
+                </div>
+                <div class="pricing-card diamond">
+                    <div class="best-value" data-i18n="enterprise">KURUMSAL ÇÖZÜM</div>
+                    <div class="pack-name" data-i18n="pack_5_name">Diamond Paket</div>
+                    <div class="price-contact" data-i18n="price_contact_special">Özel Teklif İçin<br><span>İletişime Geçin</span></div>
+                    <ul class="features">
+                        <li data-i18n="p5_f1">Global Marka Mimasyonu</li>
+                        <li data-i18n="p5_f2">Yapay Zeka Pazarlama</li>
+                        <li data-i18n="p5_f3">8K Sinematik Prodüksiyon</li>
+                        <li data-i18n="p5_f4">Global Kampanyalar</li>
+                        <li data-i18n="p5_f5">Özel Yazılım Desteği</li>
+                        <li data-i18n="p5_f6">24/7 VIP Ekip</li>
+                    </ul>
+                    <a href="#contact" class="price-btn" data-i18n="btn_request">Teklif Al</a>
                 </div>
             </div>
         </section>
 
-        <!-- Contact -->
-        <section id="contact" class="container">
+        <!-- Contact Section -->
+        <section id="contact" class="container contact-section">
             <div class="section-header">
-                <h2 class="gradient-text" data-i18n="contact_title">İletişim</h2>
+                <h2 class="gradient-text" data-i18n="contact_title">İletişime Geçin</h2>
             </div>
             <div class="contact-grid">
-                <div class="contact-map">
+                <div class="contact-map-side">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3060.2836395119775!2d32.8037832!3d39.9126683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d348b24d0d5bd3%3A0x10c842d2b3be1d6!2sKo%C3%A7%20Kuleleri!5e0!3m2!1str!2str!4v1775597456309!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="contact-info">
-                    <p><strong>Email:</strong> info@mistechnology.co</p>
-                    <p><strong>Tel:</strong> +90 534 063 73 53</p>
+                <div class="contact-details-side">
+
+                    <div class="detail-box">
+                        <h3 data-i18n="contact_phone">TELEFON</h3>
+                        <p>+90 534 063 73 53</p>
+                    </div>
+                    <div class="detail-box">
+                        <h3 data-i18n="contact_address">ADRES</h3>
+                        <p data-i18n="contact_addr_val">Koç Kuleleri No:2/17-18, Çankaya/Ankara</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 MIS SOCIAL AGENCY</p>
+    <footer id="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col footer-agency">
+                <img src="logo.png" alt="Mis Social Agency">
+                <p data-i18n="footer_desc">Dijital dünyanın sınırlarını zorlayan sosyal medya mimarı.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4 data-i18n="services_title">Hizmetlerimiz</h4>
+                <a href="#services" data-i18n="ser_1_title">Sosyal Medya Yönetimi</a>
+                <a href="#services" data-i18n="ser_2_title">İçerik Üretimi</a>
+                <a href="#services" data-i18n="ser_3_title">Dijital Reklam</a>
+                <a href="#services" data-i18n="ser_4_title">Analiz & Raporlama</a>
+                <a href="#services" data-i18n="ser_5_title">Influencer Marketing</a>
+                <a href="#services" data-i18n="ser_6_title">Strateji Danışmanlığı</a>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="footer_col_1">Linkler</h4>
+                <a href="#home" data-i18n="nav_home">Ana Sayfa</a>
+                <a href="#work" data-i18n="nav_references">Referanslar</a>
+                <a href="#pricing" data-i18n="nav_pricing">Paketler</a>
+                <a href="#about" data-i18n="nav_about">Hakkımızda</a>
+            </div>
+
+            <div class="footer-col">
+                <h4 data-i18n="nav_contact">İletişim</h4>
+                <p><strong>T:</strong> +90 534 063 73 53</p>
+                <p style="opacity: 0.7; margin-top: 10px;" data-i18n="contact_addr_val">Koç Kuleleri No:2/17-18, Çankaya/Ankara</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 MIS SOCIAL AGENCY. POWERED BY MISTECHNOLOGY.CO</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
