@@ -69,7 +69,16 @@ header {
     left: 0; 
     width: 100%;
     z-index: 1000;
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+header.scrolled {
+    top: 0;
+    background: rgba(8, 8, 12, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 5px 0;
 }
 
 .nav-premium {
@@ -244,6 +253,23 @@ header {
     100% {
         transform: scale(1) translate(-2%, -3%) rotate(-1deg);
     }
+}
+
+.video-card video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: contain;
+    background: #000;
+    z-index: 1;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.video-card.extra-small {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 1/1;
 }
 
 .hero-bg {
@@ -464,61 +490,73 @@ header {
         transform: translateX(-50%);
     }
 }
-/* Video Bento Grid */
+/* Vertical Video Reels Grid */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 350px;
-    gap: 15px;
-    margin-top: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 60px;
 }
 
 .video-card {
     position: relative;
+    aspect-ratio: 9 / 16;
+    background: #08080c;
+    border-radius: 16px;
     overflow: hidden;
-    background: #111;
-    border: 1px solid var(--glass-border);
     cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s, box-shadow 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--accent-purple);
+    box-shadow: 0 20px 40px rgba(124, 77, 255, 0.2);
+    z-index: 10;
 }
 
 .video-card video {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     object-fit: cover;
-    opacity: 0.6;
-    transition: var(--transition);
+    z-index: 1;
+    opacity: 0.7;
+    transition: 0.5s;
 }
 
 .video-card:hover video {
     opacity: 1;
-    transform: scale(1.05);
-}
-
-.video-card.large {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.video-card.tall {
-    grid-column: span 1;
-    grid-row: span 2;
 }
 
 .video-info {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 0; left: 0;
     width: 100%;
-    padding: 30px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 25px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    z-index: 2;
+    transform: translateY(10px);
+    transition: 0.3s;
     opacity: 0;
-    transform: translateY(20px);
-    transition: var(--transition);
 }
 
 .video-card:hover .video-info {
-    opacity: 1;
     transform: translateY(0);
+    opacity: 1;
+}
+
+.video-info h3 {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 5px;
+    letter-spacing: 0.05em;
+}
+
+.video-info p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
 }
 
 /* Services */
@@ -886,13 +924,25 @@ footer {
     .stats-grid,
     .services-advanced-grid,
     .contact-grid,
-    .video-grid,
     .pricing-grid-full {
         grid-template-columns: 1fr;
     }
 
+    .video-info {
+        padding: 12px;
+    }
+
+    .video-info h3 {
+        font-size: 0.8rem;
+    }
+
+    .video-info p {
+        font-size: 0.65rem;
+    }
+
     .video-grid {
-        grid-auto-rows: 250px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
 
     .video-card.large,
@@ -935,4 +985,45 @@ footer {
     .footer-agency {
         grid-column: span 1;
     }
+}
+
+/* Brands Marquee Styles */
+.brands-marquee-section {
+    padding: 60px 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 40px 0;
+}
+
+.marquee-content {
+    display: flex;
+    white-space: nowrap;
+}
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    animation: marquee 25s linear infinite;
+}
+
+.marquee-track img {
+    height: 50px;
+    width: 140px;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: 0.4s ease;
+    padding: 0 10px;
+}
+
+.marquee-track img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }

@@ -26,6 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
             work_3_desc: "Veri Odaklı Analiz",
             work_4_cat: "ETKİNLİK ÇEKİMİ",
             work_4_desc: "Drone & Sinematik Bakış",
+            work_5_cat: "EMLAK VİRAL",
+            work_5_desc: "Lüks Konut Tanıtımı",
+            work_6_cat: "TANITIM FİLMİ",
+            work_6_desc: "Açılış & Lansman",
+            work_7_cat: "SPOR SALONU",
+            work_7_desc: "Motivasyon & Reklam Filmi",
+            work_8_cat: "GÜZELLİK MERKEZİ",
+            work_8_desc: "Sinematik Marka Hikayesi",
+            work_9_cat: "HAVUZ & TATİL",
+            work_9_desc: "Tanıtım ve Reklam Çekimi",
+            work_10_cat: "RESTORAN",
+            work_10_desc: "Sinematik Lezzet Tanıtımı",
             services_title: "Hizmetlerimiz",
             ser_1_title: "Sosyal Medya Yönetimi",
             ser_1_desc: "Instagram, Facebook, Twitter ve LinkedIn hesaplarınızı profesyonel olarak yönetiyoruz.",
@@ -106,6 +118,18 @@ document.addEventListener('DOMContentLoaded', () => {
             work_3_desc: "Data-Driven Analysis",
             work_4_cat: "EVENT SHOOTING",
             work_4_desc: "Drone & Cinematic Perspective",
+            work_5_cat: "REAL ESTATE VIRAL",
+            work_5_desc: "Luxury Housing Promo",
+            work_6_cat: "INTRO FILM",
+            work_6_desc: "Opening & Launch",
+            work_7_cat: "GYM & FITNESS",
+            work_7_desc: "Motivation & Commercial",
+            work_8_cat: "BEAUTY CENTER",
+            work_8_desc: "Cinematic Brand Story",
+            work_9_cat: "POOL & RESORT",
+            work_9_desc: "Promotion & Advertising",
+            work_10_cat: "RESTAURANT",
+            work_10_desc: "Cinematic Food Promo",
             services_title: "Our Services",
             ser_1_title: "Social Media Management",
             ser_1_desc: "We manage your Instagram, Facebook, Twitter and LinkedIn accounts professionally.",
@@ -180,6 +204,9 @@ document.addEventListener('DOMContentLoaded', () => {
         currentLang = currentLang === 'tr' ? 'en' : 'tr';
         updateContent();
     });
+
+    // Initial load
+    updateContent();
 
     // --- NAVBAR SCROLL ---
     const header = document.getElementById('main-header');
