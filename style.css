@@ -1002,12 +1002,12 @@ footer {
 
 /* Brands Marquee Styles */
 .brands-marquee-section {
-    padding: 30px 0;
+    padding: 15px 0;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.02);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .marquee-content {
@@ -1018,17 +1018,17 @@ footer {
 .marquee-track {
     display: flex;
     align-items: center;
-    gap: 80px;
-    animation: marquee 25s linear infinite;
+    gap: 60px;
+    animation: marquee 30s linear infinite;
 }
 
 .marquee-track img {
-    height: 40px;
-    width: 120px;
+    height: 30px;
+    width: 100px;
     object-fit: contain;
-    opacity: 0.9;
+    opacity: 0.8;
     transition: 0.4s ease;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .marquee-track img:hover {
