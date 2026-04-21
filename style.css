@@ -273,7 +273,7 @@ header {
 .hero-content {
     position: relative;
     z-index: 3;
-    max-width: 100%;
+    max-width: 1100px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -281,11 +281,11 @@ header {
 }
 
 .hero h1 {
-    font-size: clamp(5rem, 16vw, 15rem);
-    font-weight: 950;
-    line-height: 0.8;
-    margin-bottom: 40px;
-    letter-spacing: -0.08em;
+    font-size: clamp(3.2rem, 8.5vw, 6.5rem);
+    font-weight: 900;
+    line-height: 1.0;
+    margin-bottom: 30px;
+    letter-spacing: -0.04em;
     animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
@@ -900,5 +900,15 @@ footer {
         width: auto;
         padding: 12px 24px;
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-agency {
+        grid-column: span 1;
     }
 }
