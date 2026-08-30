@@ -38,6 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
             work_9_desc: "Tanıtım ve Reklam Çekimi",
             work_10_cat: "RESTORAN",
             work_10_desc: "Sinematik Lezzet Tanıtımı",
+            work_11_cat: "DİJİTAL İÇERİK",
+            work_11_desc: "Marka Tanıtım Filmi",
+            work_12_cat: "PRODÜKSİYON",
+            work_12_desc: "Kreatif İçerik Üretimi",
+            work_13_cat: "VİDEO ÇEKİMİ",
+            work_13_desc: "Profesyonel Video Prodüksiyonu",
+            work_14_cat: "TANITIM ÇEKİMİ",
+            work_14_desc: "Kurumsal Video Prodüksiyon",
+            work_15_cat: "DİJİTAL REKLAM",
+            work_15_desc: "Etkili Prodüksiyon Çözümleri",
+            work_16_cat: "VİDEO İÇERİK",
+            work_16_desc: "Görsel Marka Hikayesi",
             services_title: "Hizmetlerimiz",
             ser_1_title: "Sosyal Medya Yönetimi",
             ser_1_desc: "Instagram, Facebook, Twitter ve LinkedIn hesaplarınızı profesyonel olarak yönetiyoruz.",
@@ -68,9 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
             about_desc_2: "Kreatif yaklaşımımız ve sektör dinamiklerine hakim ekibimizle, her ölçekten markanın dijital hedeflerine ulaşmasına destek oluyoruz.",
             pricing_title: "Fiyat & Paketlerimiz",
             pricing_subtitle: "İhtiyaçlarınıza en uygun paketi seçin.",
-            pack_1_name: "Bronze Paket",
-            pack_2_name: "Silver Paket",
-            pack_3_name: "Gold Paket",
+            pack_1_name: "Başlangıç Paketi",
+            pack_2_name: "Profesyonel Paket",
+            pack_3_name: "Kurumsal Paket",
             best_value: "EN ÇOK TERCİH EDİLEN",
             pack_4_name: "Platinum Paket",
             pack_5_name: "Diamond Paket",
@@ -130,6 +142,18 @@ document.addEventListener('DOMContentLoaded', () => {
             work_9_desc: "Promotion & Advertising",
             work_10_cat: "RESTAURANT",
             work_10_desc: "Cinematic Food Promo",
+            work_11_cat: "DIGITAL CONTENT",
+            work_11_desc: "Brand Promo Film",
+            work_12_cat: "PRODUCTION",
+            work_12_desc: "Creative Content Production",
+            work_13_cat: "VIDEO SHOOTING",
+            work_13_desc: "Professional Video Production",
+            work_14_cat: "PROMO SHOOTING",
+            work_14_desc: "Corporate Video Production",
+            work_15_cat: "DIGITAL AD",
+            work_15_desc: "Effective Production Solutions",
+            work_16_cat: "VIDEO CONTENT",
+            work_16_desc: "Visual Brand Story",
             services_title: "Our Services",
             ser_1_title: "Social Media Management",
             ser_1_desc: "We manage your Instagram, Facebook, Twitter and LinkedIn accounts professionally.",
@@ -160,9 +184,9 @@ document.addEventListener('DOMContentLoaded', () => {
             about_desc_2: "We support brands of all sizes to reach their digital goals with our creative approach.",
             pricing_title: "Pricing & Packages",
             pricing_subtitle: "Choose the package that best suits your needs.",
-            pack_1_name: "Bronze Package",
-            pack_2_name: "Silver Package",
-            pack_3_name: "Gold Package",
+            pack_1_name: "Starter Package",
+            pack_2_name: "Professional Package",
+            pack_3_name: "Corporate Package",
             best_value: "MOST PREFERRED",
             pack_4_name: "Platinum Package",
             pack_5_name: "Diamond Package",
@@ -274,6 +298,27 @@ document.addEventListener('DOMContentLoaded', () => {
             closeBtn.click();
         }
     });
+
+    // --- LAZY LOAD VIDEOS ---
+    const lazyVideos = document.querySelectorAll('.lazy-video');
+    if ('IntersectionObserver' in window) {
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.play().catch(e => console.log('Autoplay prevented:', e));
+                } else {
+                    entry.target.pause();
+                }
+            });
+        }, { threshold: 0.1 });
+
+        lazyVideos.forEach(video => {
+            videoObserver.observe(video);
+        });
+    } else {
+        // Fallback for older browsers
+        lazyVideos.forEach(video => video.play().catch(e => {}));
+    }
 
     // --- MOBILE MENU ---
     const mobileMenuBtn = document.getElementById('mobile-menu');
