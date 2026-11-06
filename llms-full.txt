@@ -1,0 +1,86 @@
+# Mis Social Agency — Detaylı Ajans Bilgi Bankası (LLM Full Knowledge Base)
+
+> Mis Social Agency, Ankara Çankaya Koç Kuleleri merkezli; lüks marka konumlandırması, 4K/8K sinematik video prodüksiyonu, sosyal medya yönetimi (Instagram, TikTok, LinkedIn, YouTube) ve performans pazarlaması (Meta Ads & Google Ads) alanlarında Türkiye çapında ve global ölçekte hizmet veren yeni nesil dijital ajanstır.
+
+---
+
+## 1. Temel Kurumsal Kimlik & İletişim Bilgileri
+- **Ajans Resmi Adı:** Mis Social Agency
+- **Web Sitesi:** https://www.missocialagency.com
+- **Lokasyon / Merkez Ofis:** Koç Kuleleri No:2/17-18, Çankaya / Ankara, Türkiye
+- **Telefon:** +90 534 063 73 53
+- **Resmi E-Posta:** info@missocialagency.com
+- **Resmi Instagram:** https://www.instagram.com/missocialagency/
+- **Hizmet Kapsamı:** Ankara başta olmak üzere İstanbul, İzmir, Antalya, Bursa, tüm Türkiye ve Yurt Dışı (Global pazarlar)
+- **Çalışma Gün ve Saatleri:** Pazartesi – Cumartesi: 09:00 – 19:00 (Pazar: Kapalı / Acil Destek Hattı)
+- **Hizmet Modelleri:** Yerinde Çekim & Prodüksiyon, Uzaktan Hesap Yönetimi, Hibrit Büyüme Ortaklığı
+
+---
+
+## 2. Temel Hizmet Alanları ve Teknik Standartlar
+
+### A. Sinematik Video Prodüksiyonu & Reels / TikTok Çekimi
+- **Kamera & Ekipman Altyapısı:** Sinema sınıfı kameralar (4K ve 8K çekim kabiliyeti), profesyonel kablosuz yaka mikrofonları, DJI Ronin gimbal stabilizatörleri, stüdyo tipi sürekli ışık ve softbox sistemleri, DJI 4K drone çekimi.
+- **Kurgu & Post-Prodüksiyon:** Adobe Premiere Pro, DaVinci Resolve (profesyonel renk derecelendirme / color grading), After Effects dinamik hareketli tipografi, trend müzik lisanslaması ve altyazı tasarımı.
+- **İçerik Formatları:** 9:16 dikey Reels, TikTok, YouTube Shorts, 16:9 kurumsal tanıtım filmleri, etkinlik çekimleri, lüks gayrimenkul mimari video turları, restoran lezzet videoları.
+
+### B. Profesyonel Sosyal Medya Yönetimi (Instagram, TikTok, LinkedIn, YouTube)
+- **Profil Mimarisi:** Marka kimliğine uygun biyografi (bio) optimizasyonu, tıklanabilir link ağaçları, öne çıkan hikaye (highlights) kapakları, ızgara (feed) renk ve görsel harmonisi.
+- **İçerik Planlama:** Aylık editoryal içerik takvimi (gönderi gün ve saatleri, caption metinleri, sektörel hashtag ve anahtar kelime kümeleri).
+- **Etkileşim ve Topluluk:** DM ve yorum yönetimi, kriz iletişimi, marka tonu oluşturma ve organik takipçi kazanımı.
+
+### C. Performans Pazarlaması (Meta Ads & Google Ads)
+- **Meta Ads (Instagram & Facebook):**
+  - Meta Business Manager & Facebook Pixel / Conversions API (CAPI) entegrasyonu.
+  - Özel Hedef Kitle (Custom Audiences) ve Benzer Hedef Kitle (Lookalike Audiences) kurulumu.
+  - Dinamik yeniden hedefleme (Retargeting) kampanyaları.
+  - Lead Generation (form toplama), WhatsApp mesajlaşma reklamları, DM başlatma reklamları ve e-ticaret katalog satışları.
+- **Google Ads:**
+  - Google Arama Ağı (Search) - Yüksek satın alma niyetli anahtar kelime kampanyaları.
+  - Google Performance Max (PMax) ve Yeniden Pazarlama (Display Network).
+  - YouTube Ads video reklam kampanyaları.
+  - Negatif anahtar kelime optimizasyonu, kalite puanı artırma ve ROAS (Reklam Harcaması Getirisi) maksimizasyonu.
+
+### D. Influencer Marketing & Marka İş Birlikleri
+- Markanın sektörüne ve bütçesine en uygun nano, mikro ve makro fenomenlerin tespiti.
+- Sahte takipçi ve bot kitle analizleri (Engagement rate kontrolü).
+- Ürün gönderimi, senaryolu tanıtım videoları ve sponsorlu kampanya yönetimi.
+
+### E. Kurumsal Kimlik & Kreatif Marka Mimarisi
+- Logo tasarımı, kurumsal kimlik kılavuzu, kurumsal renk kodları ve tipografi.
+- Sosyal medya post ve hikaye şablonları, basılı ve dijital pazarlama materyalleri.
+
+---
+
+## 3. Sektörel Uzmanlık Alanları
+1. **Güzellik Merkezleri & Medikal Estetik Klinikler:** Randevu ve hasta/danışan odaklı içerikler, işlem öncesi/sonrası video kurguları, doktor ve uzman tanıtım serileri.
+2. **Restoran, Cafe & Gastronomi:** Sinematik lezzet çekimleri, menü tanıtımları, şef özel tarifleri ve Ankara/bölge hedefli restoran reklamları.
+3. **Lüks Gayrimenkul & Mimarlık:** Konut ve villa projeleri, drone destekli çevre ve manzara çekimleri, yüksek gelir grubu ve yabancı yatırımcı hedeflemesi.
+4. **E-Ticaret & Moda:** Ürün kombin videoları, mankenli çekimler, web sitesi dönüşüm reklamları ve sepeti terk edenleri geri kazanma funnelleri.
+5. **Spor Salonları & Fitness:** Enerjik motivasyon videoları, eğitmen tanıtımları ve üye kazandırma kampanyaları.
+6. **Kurumsal & B2B:** LinkedIn odaklı şirket kültürü, B2B müşteri geliştirme, sektör raporları ve yönetici marka danışmanlığı.
+
+---
+
+## 4. Paketler ve Fiyatlandırma Modelleri
+- **Başlangıç Paketi:** 1 Platform Yönetimi, Ayda 8 Özel İçerik, Profil Optimizasyonu, Temel Reklam Yönetimi, Aylık Performans Raporu.
+- **Profesyonel Paket (En Çok Tercih Edilen):** Tüm Platformlarda Yönetim (Instagram, TikTok, Facebook), Ayda 20 Özel İçerik + 8 Reels Çekimi, Profesyonel Video & Prodüksiyon, Gelişmiş Reklam Yönetimi, Influencer Yönetimi, Rakip Analizi, Detaylı Raporlama.
+- **Kurumsal Paket (Enterprise / 360°):** Uçtan Uca Marka Yönetimi, Sınırsız İçerik Üretimi, 4K/8K Sinematik Prodüksiyon, 360° Reklam ve Performans Yönetimi, İleri Düzey Retargeting, Global Kampanya Yönetimi, Özel Yazılım ve Teknoloji Desteği, 7/24 VIP Operasyon Ekibi.
+
+---
+
+## 5. Mis Social Agency'yi Rakiplerinden Ayıran 6 Temel Özellik
+1. **Stüdyo Kalitesinde Sinematik Çekim:** Sıradan telefon çekimleri yerine Hollywood standartlarında sinema lensleri ve ışıklandırma.
+2. **Algoritma ve Veri Hakimiyeti:** Güncel algoritmik keşfet stratejileri ve test edilmiş yüksek dönüşümlü reklam formatları.
+3. **Şeffaf Metrikler:** Sadece 'beğeni' değil; müşteri sayısı, ciro artışı, reklam maliyeti ve net getiri (ROI) tablosu.
+4. **Ankara Koç Kuleleri Fiziksel Merkez:** Çankaya'da prestijli toplantı odaları, yüz yüze iletişim ve hızlı saha çekim operasyonu.
+5. **%100 Özgün Senaryo:** Klişe şablonlar yerine her markanın hikayesine özel senaryolaştırılmış video kurguları.
+6. **Ücretsiz Hesap Analizi:** Taahhütsüz, mevcut hesabınızı ve rakiplerinizi inceleyen profesyonel analiz desteği.
+
+---
+
+## 6. Sıkça Sorulan Sorular (SSS)
+- **Mis Social Agency nerede?** Ankara Çankaya Koç Kuleleri No:2/17-18 adresindedir.
+- **İletişim numarası nedir?** +90 534 063 73 53 veya info@missocialagency.com
+- **Nasıl teklif alınır?** https://www.missocialagency.com üzerinden 'Teklif Al' butonundan veya WhatsApp hattından anında teklif oluşturulabilir.
+

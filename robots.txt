@@ -1,0 +1,57 @@
+# Robots.txt for Mis Social Agency
+# https://www.missocialagency.com
+# Optimized for Search Engines & Generative AI Engines (GEO / LLMO)
+
+User-agent: *
+Allow: /
+
+# AI Search & Large Language Model Crawlers (GEO / ChatGPT / Perplexity / Claude)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap & LLM Knowledge File References
+Sitemap: https://www.missocialagency.com/sitemap.xml
+LLMS-Txt: https://www.missocialagency.com/llms.txt
+LLMS-Full-Txt: https://www.missocialagency.com/llms-full.txt
