@@ -30,6 +30,9 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
 }
 
 body {
@@ -37,8 +40,17 @@ body {
     color: var(--text-primary);
     font-family: var(--font-main);
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+main {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 .container {
@@ -916,464 +928,22 @@ img, video, iframe {
     height: auto;
 }
 
-/* --------------------------------------------------------------------------
-   1. TABLET & SMALL LAPTOP (max-width: 1100px)
-   -------------------------------------------------------------------------- */
-@media (max-width: 1100px) {
-    header {
-        top: 10px;
-    }
-
-    .nav-premium {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 10px;
-    }
-
-    .nav-ctas-capsule {
-        margin-right: 20px;
-    }
-
-    .menu-toggle {
-        display: block;
-        z-index: 1002;
-    }
-
-    .nav-links {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        height: 100dvh;
-        background: rgba(5, 5, 8, 0.98);
-        backdrop-filter: blur(25px);
-        -webkit-backdrop-filter: blur(25px);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 22px;
-        z-index: 1001;
-        padding: 40px 20px;
-        overflow-y: auto;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        font-size: 1.35rem;
-        font-weight: 700;
-        color: var(--text-primary);
-        letter-spacing: 0.05em;
-        transition: color 0.3s ease;
-    }
-
-    .nav-links a:hover {
-        color: var(--accent-purple);
-    }
-
-    .menu-toggle .bar {
-        width: 24px;
-        height: 2px;
-        background-color: white;
-        margin: 5px auto;
-        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        border-radius: 2px;
-    }
-
-    .menu-toggle.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active .bar:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
-    }
-
-    .menu-toggle.active .bar:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
-    }
-
-    /* Layout Grids on Tablets */
-    .services-advanced-grid,
-    .sectors-grid,
-    .why-us-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-    }
-
-    .stat-item {
-        padding: 40px 20px;
-    }
-
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-
-    .about-image img {
-        max-width: 440px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .pricing-grid-full {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-
-    .pricing-card.diamond {
-        grid-column: span 2;
-        max-width: 650px;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-
-    .footer-agency {
-        grid-column: span 2;
-    }
+/* Base Anti-Overflow Protection for Grid Children */
+.stat-item,
+.service-advanced-card,
+.sector-card,
+.why-us-card,
+.pricing-card,
+.video-card,
+.process-step,
+.detail-box {
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
-
-/* --------------------------------------------------------------------------
-   2. MOBILE & PHONES (max-width: 768px)
-   -------------------------------------------------------------------------- */
-@media (max-width: 768px) {
-    header {
-        top: 0;
-        background: rgba(8, 8, 12, 0.85);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    }
-
-    .nav-premium {
-        padding: 10px 0;
-    }
-
-    .logo img {
-        height: 38px;
-        width: auto;
-    }
-
-    .nav-ctas-capsule {
-        display: none;
-    }
-
-    /* Hero Responsive */
-    .hero {
-        min-height: 100vh;
-        min-height: 100dvh;
-        height: auto;
-        padding: 110px 0 60px;
-    }
-
-    .hero-badge {
-        font-size: 0.78rem;
-        padding: 6px 14px;
-        margin-bottom: 16px;
-        max-width: 95%;
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: clamp(2.1rem, 8vw, 3rem);
-        line-height: 1.1;
-        margin-bottom: 20px;
-    }
-
-    .hero p {
-        font-size: 1.05rem;
-        line-height: 1.6;
-        margin-bottom: 30px;
-        padding: 0 10px;
-    }
-
-    .hero-btns {
-        flex-direction: row;
-        gap: 12px;
-        width: auto;
-    }
-
-    .btn {
-        padding: 12px 24px;
-        font-size: 0.85rem;
-    }
-
-    /* Section Headers */
-    .section-header h2 {
-        font-size: clamp(1.8rem, 6vw, 2.4rem);
-    }
-
-    .section-subtitle {
-        font-size: 0.95rem;
-        padding: 0 10px;
-    }
-
-    /* Stats on Phone */
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    .stat-item {
-        padding: 24px 14px;
-    }
-
-    .stat-item h2 {
-        font-size: 1.9rem;
-    }
-
-    .stat-item span {
-        font-size: 0.7rem;
-    }
-
-    /* Grids to 1 Column */
-    .services-advanced-grid,
-    .sectors-grid,
-    .why-us-grid,
-    .pricing-grid-full {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .service-advanced-card {
-        padding: 32px 22px;
-    }
-
-    .sector-card {
-        padding: 26px 20px;
-    }
-
-    .why-us-card {
-        padding: 26px 20px;
-    }
-
-    .pricing-card.diamond {
-        grid-column: span 1;
-        max-width: 100%;
-    }
-
-    .pricing-card {
-        padding: 35px 22px;
-    }
-
-    /* Video Reels Grid */
-    .video-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-top: 35px;
-    }
-
-    .video-info {
-        padding: 10px;
-    }
-
-    .video-info h3 {
-        font-size: 0.75rem;
-    }
-
-    .video-info p {
-        font-size: 0.62rem;
-    }
-
-    /* Process Steps on Phone */
-    .process-steps {
-        flex-direction: column;
-        gap: 40px;
-        margin-top: 40px;
-    }
-
-    .process-step:not(:last-child)::after {
-        left: 50%;
-        top: 60px;
-        width: 1px;
-        height: 40px;
-        transform: translateX(-50%);
-    }
-
-    /* FAQ */
-    .faq-accordion {
-        margin-top: 25px;
-        gap: 12px;
-    }
-
-    .faq-question {
-        padding: 18px 16px;
-        font-size: 0.95rem;
-    }
-
-    .faq-answer,
-    .faq-item.active .faq-answer {
-        padding: 0 16px 18px 16px;
-        font-size: 0.88rem;
-    }
-
-    /* Contact Details */
-    .contact-map-side iframe {
-        height: 280px;
-    }
-
-    .detail-box {
-        padding: 22px 18px;
-        margin-bottom: 15px;
-    }
-
-    .contact-whatsapp-btn {
-        width: 100%;
-        justify-content: center;
-        font-size: 0.92rem;
-        padding: 12px 20px;
-    }
-
-    /* Floating WhatsApp */
-    .floating-whatsapp span {
-        display: none;
-    }
-
-    .floating-whatsapp {
-        width: 52px;
-        height: 52px;
-        padding: 0;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        bottom: 18px;
-        right: 18px;
-    }
-
-    /* Lightbox Modal */
-    .close-lightbox {
-        top: 15px;
-        right: 15px;
-        width: 38px;
-        height: 38px;
-        font-size: 26px;
-    }
-}
-
-/* --------------------------------------------------------------------------
-   3. SMALL PHONES (max-width: 480px)
-   -------------------------------------------------------------------------- */
-@media (max-width: 480px) {
-    .container {
-        width: 92%;
-    }
-
-    .hero-badge {
-        font-size: 0.72rem;
-        padding: 5px 12px;
-    }
-
-    .hero h1 {
-        font-size: clamp(1.85rem, 8.5vw, 2.35rem);
-    }
-
-    .hero-btns {
-        flex-direction: column;
-        width: 100%;
-        max-width: 290px;
-    }
-
-    .btn {
-        width: 100%;
-        padding: 12px 18px;
-        font-size: 0.82rem;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .footer-agency {
-        grid-column: span 1;
-    }
-
-    .footer-agency img {
-        margin: 0 auto 15px;
-    }
-}
-
-/* Brands Marquee Styles */
-.brands-marquee-section {
-    padding: 28px 0;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.02);
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    margin: 15px 0;
-}
-
-.marquee-content {
-    display: flex;
-    white-space: nowrap;
-}
-
-.marquee-track {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    animation: marquee 35s linear infinite;
-}
-
-.marquee-track img {
-    height: 65px;
-    width: auto;
-    max-width: 180px;
-    object-fit: contain;
-    opacity: 0.88;
-    transition: 0.4s ease;
-    padding: 0 12px;
-}
-
-.marquee-track img:hover {
-    opacity: 1;
-    transform: scale(1.12);
-}
-
-@keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
-@media (max-width: 768px) {
-    .brands-marquee-section {
-        padding: 20px 0;
-    }
-    .marquee-track {
-        gap: 45px;
-    }
-    .marquee-track img {
-        height: 48px;
-        max-width: 140px;
-        padding: 0 8px;
-    }
-}
-
 
 /* ==========================================================================
-   SEO & GEO ENHANCEMENTS: Sectors, Why Choose Us, FAQ & Floating Contact
+   SEO & GEO SECTIONS (Desktop Base Styles)
    ========================================================================== */
 
 /* Hero Badge */
@@ -1431,7 +1001,7 @@ img, video, iframe {
 .sector-card {
     background: #08080c;
     border: 1px solid var(--glass-border);
-    padding: 40px 30px;
+    padding: 35px 28px;
     border-radius: 12px;
     transition: var(--transition);
     position: relative;
@@ -1442,12 +1012,6 @@ img, video, iframe {
     background: #0d0d14;
     transform: translateY(-6px);
     border-color: rgba(99, 102, 241, 0.3);
-}
-
-.sector-card .sector-icon {
-    font-size: 2rem;
-    margin-bottom: 18px;
-    display: inline-block;
 }
 
 .sector-card h3 {
@@ -1489,7 +1053,7 @@ img, video, iframe {
 .why-us-card {
     background: #08080c;
     border: 1px solid var(--glass-border);
-    padding: 35px 30px;
+    padding: 35px 28px;
     border-radius: 12px;
     position: relative;
     transition: var(--transition);
@@ -1657,4 +1221,493 @@ img, video, iframe {
     width: 22px;
     height: 22px;
     fill: currentColor;
+}
+
+
+/* ==========================================================================
+   UNIFIED RESPONSIVE MEDIA QUERIES (CASCADING OVERRIDES)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. TABLET & SMALL LAPTOP (max-width: 1100px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+    header {
+        top: 0;
+        width: 100%;
+        max-width: 100vw;
+        background: rgba(8, 8, 12, 0.92);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 8px 0;
+    }
+
+    .nav-premium {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 92%;
+        margin: 0 auto;
+        padding: 4px 0;
+    }
+
+    .logo img {
+        height: 38px;
+        width: auto;
+    }
+
+    .nav-ctas-capsule {
+        margin-right: 15px;
+    }
+
+    nav {
+        display: contents;
+    }
+
+    .menu-toggle {
+        display: block;
+        z-index: 1002;
+        cursor: pointer;
+        padding: 6px;
+    }
+
+    .menu-toggle .bar {
+        width: 24px;
+        height: 2px;
+        background-color: white;
+        margin: 5px auto;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        border-radius: 2px;
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        background: rgba(5, 5, 8, 0.98);
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        z-index: 1001;
+        padding: 40px 20px;
+        overflow-y: auto;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        letter-spacing: 0.05em;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: var(--accent-purple);
+    }
+
+    /* Grids on Tablet */
+    .services-advanced-grid,
+    .sectors-grid,
+    .why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .stat-item {
+        padding: 35px 20px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 420px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .pricing-grid-full {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 0;
+    }
+
+    .pricing-card.diamond {
+        grid-column: span 2;
+        max-width: 650px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .footer-agency {
+        grid-column: span 2;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   2. MOBILE & PHONES (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        position: relative;
+    }
+
+    main {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .container {
+        width: 92% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+    header {
+        top: 0;
+        padding: 8px 0;
+    }
+
+    .nav-ctas-capsule {
+        display: none !important;
+    }
+
+    .logo img {
+        height: 34px;
+    }
+
+    /* Hero Responsive */
+    .hero {
+        min-height: 100vh;
+        min-height: 100dvh;
+        height: auto;
+        padding: 100px 0 50px;
+        overflow: hidden !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        position: relative;
+    }
+
+    .hero::before {
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+        filter: blur(35px) !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 10px;
+    }
+
+    .hero-badge {
+        font-size: 0.74rem;
+        padding: 6px 12px;
+        margin-bottom: 16px;
+        max-width: 98%;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.9rem, 7.5vw, 2.7rem) !important;
+        line-height: 1.12 !important;
+        margin-bottom: 18px !important;
+        letter-spacing: -0.02em !important;
+        word-break: break-word !important;
+    }
+
+    .hero p {
+        font-size: 0.98rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 25px !important;
+        padding: 0 5px;
+    }
+
+    .hero-btns {
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .btn {
+        padding: 12px 18px;
+        font-size: 0.8rem;
+        flex: 1;
+    }
+
+    /* Marquee on Mobile */
+    .brands-marquee-section {
+        width: 100% !important;
+        max-width: 100vw !important;
+        overflow: hidden !important;
+        padding: 18px 0 !important;
+    }
+
+    .marquee-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .marquee-track {
+        gap: 40px !important;
+    }
+
+    .marquee-track img {
+        height: 48px !important;
+        max-width: 130px !important;
+        padding: 0 6px !important;
+    }
+
+    /* Stats on Mobile (Clean 2x2 Grid) */
+    .stats-section {
+        margin-top: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+
+    .stat-item {
+        padding: 20px 10px !important;
+    }
+
+    .stat-item h2 {
+        font-size: 1.75rem !important;
+    }
+
+    .stat-item span {
+        font-size: 0.68rem !important;
+        letter-spacing: 0.04em !important;
+    }
+
+    /* All Card Grids Stack Cleanly to 1 Column */
+    .services-advanced-grid,
+    .sectors-grid,
+    .why-us-grid,
+    .pricing-grid-full {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        width: 100% !important;
+        margin-top: 30px !important;
+    }
+
+    .service-advanced-card {
+        padding: 26px 20px !important;
+    }
+
+    .sector-card {
+        padding: 24px 18px !important;
+    }
+
+    .why-us-card {
+        padding: 24px 18px !important;
+    }
+
+    .pricing-card {
+        padding: 30px 20px !important;
+    }
+
+    .pricing-card.diamond {
+        grid-column: span 1 !important;
+        max-width: 100% !important;
+    }
+
+    /* Video Reels Grid on Mobile (Neat 2-Column Showcase) */
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+        margin-top: 30px !important;
+        width: 100% !important;
+    }
+
+    .video-info {
+        padding: 8px !important;
+    }
+
+    .video-info h3 {
+        font-size: 0.72rem !important;
+    }
+
+    .video-info p {
+        font-size: 0.6rem !important;
+    }
+
+    /* Process Steps on Mobile */
+    .process-steps {
+        flex-direction: column !important;
+        gap: 35px !important;
+        margin-top: 35px !important;
+    }
+
+    .process-step:not(:last-child)::after {
+        left: 50% !important;
+        top: 60px !important;
+        width: 1px !important;
+        height: 35px !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* FAQ on Mobile */
+    .faq-accordion {
+        margin-top: 25px !important;
+        gap: 12px !important;
+        width: 100% !important;
+    }
+
+    .faq-question {
+        padding: 16px 16px !important;
+        font-size: 0.92rem !important;
+    }
+
+    .faq-answer,
+    .faq-item.active .faq-answer {
+        padding: 0 16px 16px 16px !important;
+        font-size: 0.86rem !important;
+    }
+
+    /* Contact on Mobile */
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+        width: 100% !important;
+    }
+
+    .contact-map-side iframe {
+        height: 260px !important;
+    }
+
+    .detail-box {
+        padding: 20px 16px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .contact-whatsapp-btn {
+        width: 100% !important;
+        justify-content: center !important;
+        font-size: 0.9rem !important;
+        padding: 12px 18px !important;
+    }
+
+    /* Footer on Mobile */
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+        text-align: center !important;
+    }
+
+    .footer-agency {
+        grid-column: span 1 !important;
+    }
+
+    .footer-agency img {
+        margin: 0 auto 12px !important;
+    }
+
+    /* Floating WhatsApp Button on Mobile */
+    .floating-whatsapp span {
+        display: none !important;
+    }
+
+    .floating-whatsapp {
+        width: 50px !important;
+        height: 50px !important;
+        padding: 0 !important;
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        bottom: 16px !important;
+        right: 16px !important;
+    }
+
+    .close-lightbox {
+        top: 15px;
+        right: 15px;
+        width: 38px;
+        height: 38px;
+        font-size: 24px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. SMALL PHONES (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.85rem !important;
+    }
+
+    .hero-btns {
+        flex-direction: column !important;
+        width: 100% !important;
+        max-width: 280px !important;
+    }
+
+    .btn {
+        width: 100% !important;
+    }
+
+    .section-header h2 {
+        font-size: 1.7rem !important;
+    }
+
+    .stat-item h2 {
+        font-size: 1.55rem !important;
+    }
 }
